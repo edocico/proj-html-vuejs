@@ -1,13 +1,19 @@
 <script>
+import { store } from "../store";
+
 export default {
-  data() {},
+  data() {
+    return {
+      store: store,
+    };
+  },
 };
 </script>
 <template>
   <header>
     <!--header top-->
     <div class="header-top">
-      <div class="container">
+      <div class="container-m">
         <div class="row">
           <div class="top-1">
             <span>English</span>
@@ -37,13 +43,15 @@ export default {
     </div>
     <!--header-mid-->
     <div class="header-mid">
-      <div class="container">
+      <div class="container-m">
         <div class="row">
           <div class="mid-1">
             <img src="/MasterStudy.svg" alt="logo" />
           </div>
           <div class="mid-2">
-            <div><span class="icon">i</span><span>CATEGORY</span></div>
+            <div>
+              <span class="icon">i</span><span class="cat">CATEGORY</span>
+            </div>
             <input type="text" placeholder="Search courses" />
             <button>i</button>
           </div>
@@ -64,11 +72,13 @@ export default {
       <div class="container">
         <div class="row">
           <ul>
-            <li><span>i</span><a href="#"></a>Business</li>
-            <li><span>i</span><a href="#"></a>Design</li>
-            <li><span>i</span><a href="#"></a>Development</li>
-            <li><span>i</span><a href="#"></a>Lifestyle</li>
-            <li><span>i</span><a href="#"></a>Office Productivity</li>
+            <li
+              v-for="(directory, index) in store.headerDirectories"
+              :key="index"
+            >
+              <span><!--<font-awesome-icon :icon="directory.icon" />-->i</span
+              ><a href="#">{{ directory.name }}</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -91,7 +101,7 @@ export default {
       flex-grow: 1;
       gap: 8px;
       color: #aaaaaa;
-      font-size: 10px;
+      font-size: 12px;
     }
 
     .top-2 ul {
@@ -99,7 +109,7 @@ export default {
       padding: 20px 0px;
       gap: 24px;
       color: #aaaaaa;
-      font-size: 10px;
+      font-size: 12px;
     }
 
     .top-3 ul {
@@ -113,7 +123,7 @@ export default {
 .header-mid {
   border-bottom: 1px solid black;
 
-  padding: 20px 0px;
+  padding: 24px 0px;
 
   .row {
     display: flex;
@@ -125,6 +135,11 @@ export default {
     display: flex;
     align-items: center;
     color: #aaaaaa;
+    font-size: 14px;
+
+    .cat {
+      font-weight: 900;
+    }
 
     div {
       margin-right: 10px;
@@ -154,6 +169,7 @@ export default {
     display: flex;
     align-items: center;
     gap: 25px;
+    font-size: 14px;
 
     div {
       display: flex;
@@ -165,6 +181,7 @@ export default {
     display: flex;
     align-items: center;
     gap: 25px;
+    font-size: 14px;
 
     button {
       background-color: $red;
@@ -202,6 +219,11 @@ export default {
 
     li {
       color: white;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid white;
+      }
 
       span {
         margin-right: 5px;
