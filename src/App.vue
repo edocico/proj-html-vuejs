@@ -1,5 +1,6 @@
 <script>
 import { store } from "./store";
+import pageHeader from "./components/pageHeader.vue";
 
 export default {
   data() {
@@ -7,10 +8,15 @@ export default {
       store: store,
     };
   },
+  components: {
+    pageHeader,
+  },
 };
 </script>
 
-<template></template>
+<template>
+  <pageHeader />
+</template>
 
 <style lang="scss">
 @use "./styles/general.scss" as *;
