@@ -19,7 +19,9 @@ export default {
       </figure>
       <div class="card-bottom">
         <div class="bottom-top">
-          <p class="theme">{{ item.theme }}</p>
+          <p class="theme">
+            <a href="#">{{ item.theme }}</a>
+          </p>
           <p class="description">{{ item.description }}</p>
         </div>
         <div class="bottom-down">
