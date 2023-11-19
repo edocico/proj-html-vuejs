@@ -215,6 +215,10 @@ export default {
         font-size: 40px;
       }
 
+      p {
+        color: $darkgrey;
+      }
+
       button {
         align-self: flex-start;
         line-height: 2.5em;
@@ -251,6 +255,10 @@ export default {
 
       h1 {
         font-size: 40px;
+      }
+
+      p {
+        color: $darkgrey;
       }
 
       button {
