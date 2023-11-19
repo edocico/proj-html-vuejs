@@ -50,6 +50,7 @@ export default {
 
   .card {
     border: 1px solid $grey;
+    height: 323.95px;
 
     .bottom-top {
       border-bottom: 1px solid $grey;
