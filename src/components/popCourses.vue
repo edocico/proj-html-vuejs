@@ -47,7 +47,7 @@ export default {
 .popular-section {
   padding-top: 110px;
   padding-bottom: 75px;
-  background-color: white;
+  background-color: #f0f4fa;
 
   .card-box {
     flex-basis: calc(100% / 6);

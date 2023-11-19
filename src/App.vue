@@ -60,6 +60,35 @@ export default {
     </div>
   </section>
   <popCourses />
+  <section class="big-card-section">
+    <div class="container-m">
+      <div class="row">
+        <div class="big-card-left">
+          <figure>
+            <img src="/image_box_1-221x231.png" alt="img" />
+          </figure>
+          <div>
+            <h1>Become an Instructor</h1>
+            <p>
+              Teach what you love. Masterstudy gives you <br />the tools to
+              create a course
+            </p>
+            <button>start teaching</button>
+          </div>
+        </div>
+        <div class="big-card-right">
+          <figure>
+            <img src="/image_box_2-234x231.png" alt="" />
+          </figure>
+          <div>
+            <h1>Access For Business</h1>
+            <p>Get unlimited access to 2500 of top courses for your team.</p>
+            <button>doing business</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style lang="scss">
@@ -144,6 +173,92 @@ export default {
         background-color: $light-blu;
         color: white;
         text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.big-card-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .row {
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .big-card-left {
+    border: 1px solid $darkgrey;
+    padding-left: 40px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-right: 150px;
+
+    display: flex;
+    gap: 45px;
+
+    img {
+      width: 230px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      justify-content: center;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      button {
+        align-self: flex-start;
+        line-height: 2.5em;
+        padding: 5px 20px;
+        background-color: $red;
+        border: transparent;
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+  }
+
+  .big-card-right {
+    border: 1px solid $darkgrey;
+    padding-left: 40px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-right: 150px;
+
+    display: flex;
+    gap: 45px;
+
+    img {
+      width: 230px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      justify-content: center;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      button {
+        align-self: flex-start;
+        line-height: 2.5em;
+        padding: 5px 20px;
+        background-color: $red;
+        border: transparent;
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: white;
       }
     }
   }

@@ -49,7 +49,7 @@ export default {
   padding: 0px 9px;
 
   .card {
-    border: 1px solid $grey;
+    border: 1px solid $darkgrey;
     height: 323.95px;
 
     .bottom-top {
