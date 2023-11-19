@@ -155,6 +155,10 @@ export default {
       border: transparent;
       height: 40px;
       width: 300px;
+
+      &:focus {
+        outline: none;
+      }
     }
 
     button {

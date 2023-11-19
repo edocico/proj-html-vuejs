@@ -4,6 +4,7 @@ import pageHeader from "./components/pageHeader.vue";
 import pageHero from "./components/pageHero.vue";
 import devCourses from "./components/popularCoursesSection.vue";
 import recCourses from "./components/RecentCourses.vue";
+import popCourses from "./components/popCourses.vue";
 
 export default {
   data() {
@@ -16,6 +17,7 @@ export default {
     pageHero,
     devCourses,
     recCourses,
+    popCourses,
   },
 };
 </script>
@@ -57,6 +59,7 @@ export default {
       </div>
     </div>
   </section>
+  <popCourses />
 </template>
 
 <style lang="scss">
@@ -127,6 +130,11 @@ export default {
         height: 50px;
         width: 330px;
         padding-left: 15px;
+        font-size: 14px;
+
+        &:focus {
+          outline: none;
+        }
       }
 
       button {

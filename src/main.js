@@ -12,7 +12,18 @@ import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { faFaceSmile } from "@fortawesome/free-regular-svg-icons";
 import { faPrint } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faChartLine, faPalette, faGear, faFaceSmile, faPrint, faStar);
+library.add(
+  faChartLine,
+  faPalette,
+  faGear,
+  faFaceSmile,
+  faPrint,
+  faStar,
+  faChevronLeft,
+  faChevronRight
+);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
