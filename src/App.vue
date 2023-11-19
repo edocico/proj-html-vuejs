@@ -5,6 +5,7 @@ import pageHero from "./components/pageHero.vue";
 import devCourses from "./components/popularCoursesSection.vue";
 import recCourses from "./components/RecentCourses.vue";
 import popCourses from "./components/popCourses.vue";
+import testimonial from "./components/testimonial.vue";
 
 export default {
   data() {
@@ -18,6 +19,7 @@ export default {
     devCourses,
     recCourses,
     popCourses,
+    testimonial,
   },
 };
 </script>
@@ -89,6 +91,7 @@ export default {
       </div>
     </div>
   </section>
+  <testimonial />
 </template>
 
 <style lang="scss">
