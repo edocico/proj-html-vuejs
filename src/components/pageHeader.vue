@@ -117,7 +117,7 @@ export default {
               v-for="(directory, index) in store.headerDirectories"
               :key="index"
             >
-              <span><font-awesome-icon icon="{{ directory.icon }}" /></span
+              <span><font-awesome-icon :icon="`${directory.icon}`" /></span
               ><a href="#">{{ directory.name }}</a>
             </li>
           </ul>
@@ -135,7 +135,7 @@ export default {
   .row {
     justify-content: space-between;
     align-items: center;
-    gap: 18px;
+    gap: 30px;
 
     .top-1 {
       display: flex;
@@ -209,6 +209,7 @@ export default {
       height: 40px;
       width: 50px;
       color: white;
+      font-size: 18px;
     }
   }
 

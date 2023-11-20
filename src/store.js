@@ -4,23 +4,23 @@ export const store = reactive({
   headerDirectories: [
     {
       name: "Business",
-      icon: "fa-solid fa-chart-line",
+      icon: ["fas", "chart-line"],
     },
     {
       name: "Design",
-      //icon: faPalette,
+      icon: ["fas", "palette"],
     },
     {
       name: "Development",
-      //icon: faGear,
+      icon: ["fas", "gear"],
     },
     {
       name: "Lifestyle",
-      //icon: faFaceSmile,
+      icon: ["far", "face-smile"],
     },
     {
       name: "Office Productivity",
-      //icon: faPrint,
+      icon: ["fas", "print"],
     },
   ],
   popularCourses: [
