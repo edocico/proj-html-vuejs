@@ -120,10 +120,10 @@ export default {
 
 .button {
   line-height: 2.5em;
-  padding: 5px 20px;
+  padding: 10px 30px;
   background-color: $red;
   border: transparent;
-  border-radius: 20px;
+  border-radius: 25px;
   text-transform: uppercase;
   color: white;
 }
