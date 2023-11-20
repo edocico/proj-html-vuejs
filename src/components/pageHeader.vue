@@ -23,11 +23,11 @@ export default {
           </div>
           <div class="top-2">
             <ul>
-              <li>Home</li>
-              <li>Pages</li>
-              <li>Course Formats</li>
-              <li>Courses</li>
-              <li>Demos</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Course Formats</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Demos</a></li>
             </ul>
           </div>
           <div class="top-3">
