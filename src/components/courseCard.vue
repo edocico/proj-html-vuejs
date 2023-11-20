@@ -50,11 +50,15 @@ export default {
 
   .card {
     border: 1px solid $darkgrey;
-    height: 323.95px;
+    height: 330.95px;
 
     .bottom-top {
-      border-bottom: 1px solid $grey;
+      border-bottom: 1px solid $darkgrey;
       padding-bottom: 20px;
+
+      .description {
+        font-size: 14px;
+      }
 
       .theme {
         margin-bottom: 20px;
