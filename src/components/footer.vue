@@ -19,7 +19,9 @@ export default {
             <h4>about</h4>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              <br />
               accusantium dicta consequatur ea vero voluptatibus dignissimos
+              <br />
               harum illum libero ducimus dolores tempora dolore, quis alias
             </p>
           </div>
@@ -146,7 +148,7 @@ export default {
 
     .social {
       margin-right: 80px;
-      margin-left: 120px;
+      margin-left: 80px;
 
       ul {
         display: flex;
