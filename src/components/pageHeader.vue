@@ -245,6 +245,10 @@ export default {
       color: white;
       font-weight: 900;
       text-transform: uppercase;
+
+      &:hover {
+        background-color: $green;
+      }
     }
 
     span {
