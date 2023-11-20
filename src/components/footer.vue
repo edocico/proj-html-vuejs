@@ -153,10 +153,10 @@ export default {
       ul {
         display: flex;
         flex-wrap: wrap;
-        row-gap: 5px;
+        row-gap: 8px;
 
         li {
-          padding: 5px 5px;
+          padding: 5px 0px;
           flex-basis: calc(100% / 4);
           color: white;
 
