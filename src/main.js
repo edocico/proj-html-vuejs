@@ -6,7 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import { faChartLine, faD } from "@fortawesome/free-solid-svg-icons";
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { faFaceSmile } from "@fortawesome/free-regular-svg-icons";

@@ -4,7 +4,7 @@ export const store = reactive({
   headerDirectories: [
     {
       name: "Business",
-      //icon: faChartLine,
+      icon: "fa-solid fa-chart-line",
     },
     {
       name: "Design",
