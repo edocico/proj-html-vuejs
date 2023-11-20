@@ -30,12 +30,14 @@ export default {
   </section>
 </template>
 <style lang="scss" scoped>
+@use "../styles/colors.scss" as *;
 .courses-section {
   padding: 80px 0px;
 
   h1 {
     margin-bottom: 40px;
     padding-left: 9px;
+    color: $deep-blu;
   }
 
   .card-box {

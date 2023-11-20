@@ -119,11 +119,13 @@ export default {
   h1 {
     margin-bottom: 40px;
     font-size: 46px;
+    color: $deep-blu;
   }
 
   p {
     margin-bottom: 55px;
-    font-size: 20px;
+    font-size: 18px;
+    color: $deep-blu;
   }
 
   button {
@@ -224,6 +226,7 @@ export default {
 
       h1 {
         font-size: 40px;
+        color: $deep-blu;
       }
 
       p {

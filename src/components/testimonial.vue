@@ -43,11 +43,13 @@ export default {
     h1 {
       font-size: 40px;
       margin-bottom: 40px;
+      color: $deep-blu;
     }
 
     h4 {
       font-size: 24px;
       margin-top: 45px;
+      color: $deep-blu;
     }
 
     p {

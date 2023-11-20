@@ -62,6 +62,7 @@ export default {
 
     h1 {
       font-size: 42px;
+      color: $deep-blu;
     }
 
     h4 {
