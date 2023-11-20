@@ -234,4 +234,5 @@ export const store = reactive({
       discountedPrice: "$45",
     },
   ],
+  showAllOpen: false,
 });

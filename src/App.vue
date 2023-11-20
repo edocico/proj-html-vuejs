@@ -23,6 +23,14 @@ export default {
     testimonial,
     footerSec,
   },
+  methods: {
+    openOther() {
+      this.store.showAllOpen = true;
+    },
+    closeOther() {
+      this.store.showAllOpen = false;
+    },
+  },
 };
 </script>
 
@@ -41,7 +49,7 @@ export default {
     </p>
     <button>Read More</button>
   </section>
-  <recCourses />
+  <recCourses @open="openOther" @close="closeOther" />
   <section class="subscribe-section">
     <div class="container-s">
       <div class="row">

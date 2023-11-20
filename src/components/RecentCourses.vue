@@ -3,6 +3,7 @@ import { store } from "../store";
 import Card from "./courseCard.vue";
 
 export default {
+  emits: ["open", "close"],
   data() {
     return {
       store: store,
@@ -35,7 +36,32 @@ export default {
       </div>
     </div>
     <div class="btn">
-      <button class="button">Show all</button>
+      <button
+        @click="$emit('open')"
+        class="button"
+        v-if="store.showAllOpen === false"
+      >
+        Show all
+      </button>
+    </div>
+    <div class="container-m" v-if="store.showAllOpen === true">
+      <div class="row">
+        <Card
+          v-for="(course, index) in store.recentCourses"
+          :key="index"
+          :item="course"
+          class="card-box"
+        />
+      </div>
+    </div>
+    <div class="btn">
+      <button
+        @click="$emit('close')"
+        class="button"
+        v-if="store.showAllOpen === true"
+      >
+        Close
+      </button>
     </div>
   </section>
 </template>
