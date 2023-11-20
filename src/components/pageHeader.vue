@@ -17,7 +17,9 @@ export default {
         <div class="row">
           <div class="top-1">
             <span>English</span>
-            <span>i</span>
+            <span>
+              <font-awesome-icon icon="fa-solid fa-chevron-down" />
+            </span>
           </div>
           <div class="top-2">
             <ul>
@@ -30,12 +32,36 @@ export default {
           </div>
           <div class="top-3">
             <ul>
-              <li>i</li>
-              <li>i</li>
-              <li>i</li>
-              <li>i</li>
-              <li>i</li>
-              <li>i</li>
+              <li>
+                <a href="#"
+                  ><font-awesome-icon icon="fa-brands fa-facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><font-awesome-icon icon="fa-brands fa-twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><font-awesome-icon icon="fa-brands fa-instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><font-awesome-icon icon="fa-brands fa-linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><font-awesome-icon icon="fa-brands fa-google-plus"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><font-awesome-icon icon="fa-brands fa-youtube"
+                /></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -50,19 +76,34 @@ export default {
           </div>
           <div class="mid-2">
             <div>
-              <span class="icon">i</span><span class="cat">CATEGORY</span>
+              <span class="icon"
+                ><font-awesome-icon icon="fa-solid fa-bars" /></span
+              ><span class="cat">CATEGORY</span>
             </div>
             <input type="text" placeholder="Search courses" />
-            <button>i</button>
+            <button>
+              <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+            </button>
           </div>
           <div class="mid-3">
-            <div><span>i</span><a href="#">Become an instructor</a></div>
-            <div><span>i</span><a href="#">For Enterprise</a></div>
+            <div>
+              <span><font-awesome-icon icon="fa-solid fa-bullhorn" /></span
+              ><a href="#">Become an instructor</a>
+            </div>
+            <div>
+              <span><font-awesome-icon icon="fa-solid fa-briefcase" /></span
+              ><a href="#">For Enterprise</a>
+            </div>
           </div>
           <div class="mid-4">
-            <div><span>i</span><a href="#">Log in</a></div>
+            <div>
+              <span><font-awesome-icon icon="fa-regular fa-user" /></span
+              ><a href="#">Log in</a>
+            </div>
             <button>Sign up</button>
-            <span>icon</span>
+            <span class="bookmark"
+              ><font-awesome-icon icon="fa-regular fa-bookmark"
+            /></span>
           </div>
         </div>
       </div>
@@ -116,6 +157,7 @@ export default {
       display: flex;
       padding: 20px 0px;
       gap: 12px;
+      color: #aaaaaa;
     }
   }
 }
@@ -166,6 +208,7 @@ export default {
       background-color: $light-blu;
       height: 40px;
       width: 50px;
+      color: white;
     }
   }
 
@@ -178,6 +221,11 @@ export default {
     div {
       display: flex;
       align-items: center;
+      color: #aaaaaa;
+    }
+
+    span {
+      margin-right: 5px;
     }
   }
 
@@ -196,6 +244,19 @@ export default {
       color: white;
       font-weight: 900;
       text-transform: uppercase;
+    }
+
+    span {
+      color: #aaaaaa;
+      margin-right: 5px;
+    }
+
+    a {
+      color: #aaaaaa;
+    }
+
+    .bookmark {
+      font-size: 18px;
     }
   }
 

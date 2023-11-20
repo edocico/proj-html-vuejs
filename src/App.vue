@@ -6,6 +6,7 @@ import devCourses from "./components/popularCoursesSection.vue";
 import recCourses from "./components/RecentCourses.vue";
 import popCourses from "./components/popCourses.vue";
 import testimonial from "./components/testimonial.vue";
+import footerSec from "./components/footer.vue";
 
 export default {
   data() {
@@ -20,6 +21,7 @@ export default {
     recCourses,
     popCourses,
     testimonial,
+    footerSec,
   },
 };
 </script>
@@ -92,6 +94,7 @@ export default {
     </div>
   </section>
   <testimonial />
+  <footerSec />
 </template>
 
 <style lang="scss">
