@@ -242,6 +242,10 @@ export default {
         border-radius: 25px;
         text-transform: uppercase;
         color: white;
+
+        &:hover {
+          background-color: $green;
+        }
       }
     }
   }
@@ -284,6 +288,10 @@ export default {
         border-radius: 25px;
         text-transform: uppercase;
         color: white;
+
+        &:hover {
+          background-color: $green;
+        }
       }
     }
   }
