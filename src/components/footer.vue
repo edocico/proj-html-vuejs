@@ -212,6 +212,10 @@ export default {
       p {
         color: white;
         font-size: 12px;
+
+        a {
+          text-decoration: underline;
+        }
       }
     }
   }

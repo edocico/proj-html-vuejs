@@ -196,7 +196,7 @@ export default {
       background-color: #eff2f5;
       border: transparent;
       height: 40px;
-      width: 300px;
+      width: 400px;
 
       &:focus {
         outline: none;
